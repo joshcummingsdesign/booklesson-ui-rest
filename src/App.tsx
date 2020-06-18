@@ -1,30 +1,24 @@
-import React from 'react';
-import { makeStyles, Container, Grid, Typography } from '@material-ui/core';
+import React, { FC } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HomePage } from 'views/pages/HomePage';
 
-const strings = {
-  heading: 'BookLesson',
-  text: 'Welcome to BookLesson.',
-};
+const Providers: FC = ({ children }) => <Router>{children}</Router>;
 
-export const App = () => {
-  const classes = useStyles();
-  return (
-    <Container data-testid='header' className={classes.root} maxWidth='md'>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Typography variant='h2' component='h1'>
-            {strings.heading}
-          </Typography>
-          <Typography variant='body1'>{strings.text}</Typography>
-        </Grid>
-      </Grid>
-    </Container>
-  );
-};
+const Routes = () => (
+  <Switch>
+    <Route exact path='/' component={HomePage} />
+    <Route
+      render={() => (
+        <div>
+          <p>Page Not Found</p>
+        </div>
+      )}
+    />
+  </Switch>
+);
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    textAlign: 'center',
-    padding: theme.spacing(3),
-  },
-}));
+export const App = () => (
+  <Providers>
+    <Routes />
+  </Providers>
+);
