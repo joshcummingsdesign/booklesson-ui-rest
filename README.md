@@ -1,5 +1,7 @@
 # BookLesson UI (REST)
 
+[![joshcummingsdesign](https://circleci.com/gh/joshcummingsdesign/booklesson-ui-rest.svg?style=svg)](https://circleci.com/gh/joshcummingsdesign/booklesson-ui-rest)
+
 A music lesson booking app built with [React](https://reactjs.org/) and the [BookLesson REST API](https://github.com/joshcummingsdesign/booklesson-api-rest).
 
 https://booklesson-ui-rest.netlify.app/
