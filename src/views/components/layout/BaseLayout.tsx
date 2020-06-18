@@ -5,7 +5,7 @@ export const BaseLayout: FC = ({ children }) => (
   <Container maxWidth='md'>
     <Grid container spacing={3}>
       <Grid item xs={12}>
-        {children}
+        <main>{children}</main>
       </Grid>
     </Grid>
   </Container>

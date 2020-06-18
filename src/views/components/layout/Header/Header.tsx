@@ -9,12 +9,12 @@ interface IHeader {
 export const Header = ({ heading, text }: IHeader) => {
   const classes = useStyles();
   return (
-    <div data-testid='header' className={classes.root}>
+    <header data-testid='header' className={classes.root}>
       <Typography variant='h2' component='h1'>
         {heading}
       </Typography>
       <Typography variant='body1'>{text}</Typography>
-    </div>
+    </header>
   );
 };
 
