@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { HomePage } from 'views/pages/HomePage';
+import { Home } from 'views/pages/Home';
 
 const Providers: FC = ({ children }) => <Router>{children}</Router>;
 
 const Routes = () => (
   <Switch>
-    <Route exact path='/' component={HomePage} />
+    <Route exact path='/' component={Home} />
     <Route
       render={() => (
         <div>
