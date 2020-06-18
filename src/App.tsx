@@ -9,7 +9,7 @@ const strings = {
 export const App = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.root} maxWidth='md'>
+    <Container data-testid='header' className={classes.root} maxWidth='md'>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography variant='h2' component='h1'>
