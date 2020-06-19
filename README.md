@@ -4,7 +4,11 @@
 
 A music lesson booking app built with [React](https://reactjs.org/) and the [BookLesson REST API](https://github.com/joshcummingsdesign/booklesson-api-rest).
 
-https://booklesson-ui-rest.netlify.app/
+**Site:**
+https://booklesson-ui-rest.netlify.app
+
+**Stories:**
+https://booklesson-ui-stories.netlify.app
 
 ## Requirements
 
