@@ -10,10 +10,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # Testing
-/coverage
+coverage
 
 # Build
-/build
+build
+storybook-static
 
 # Environment
 .env
